@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meine Startseite</title>
+</head>
+
+
+<body style="background-color: navy;">
+
+  <!-- 1. Überschrift: Vorname Nachname – Klasse -->
+  <h1>Alexander Pühringer – 6R</h1>
+
+  <!-- 2. Unterüberschrift: Persönliche Daten -->
+  <h2>Persönliche Daten</h2>
+  <p>Geburtsdatum: 01.01.2010</p>
+  <p>Lieblingsfarbe: Hellblau</p>
+
+  
+  <h2>Meine Lieblingsfächer</h2>
+
+  <ol>
+    <li>Sport</li>
+    <li>Mathematik</li>
+    <li>Physik</li>
+  </ol>
+
+
+  <h2>Meine Hobbys</h2>
+  
+  <ul id="liste-hobbys"></ul>
+
+
+  <h2>Freies Bild</h2>
+
+  
+  <figure>
+    <img
+      src="img/bild1.jpg"
+      width="400"
+      height="auto"
+      title="Freies Bild"
+      alt="Flagge von Belarus (reverse)"
+    >
+    <figcaption>
+      Foto von <a href="https://commons.wikimedia.org/w/index.php?title=User:%D0%A0%D1%83%D1%81%D1%82%D0%B0%D0%BC92&action=edit&redlink=1" target="_blank">Рустам92</a> –
+      <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Belarus_(1995%E2%80%932012,_reverse).png" target="_blank">Flagge von Belarus (reverse)</a> –
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+    </figcaption>
+  </figure>
+
+ 
+  <script>
+    const hobbys = ["Fußball", "Lesen", "Laufen"];  
+    const liste = document.getElementById("liste-hobbys");
+    hobbys.forEach(h => {
+      let li = document.createElement("li");
+      li.textContent = h;
+      liste.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>
